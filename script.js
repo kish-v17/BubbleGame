@@ -17,7 +17,7 @@ function runTimer(){
             document.querySelector("#timer").textContent=time;
         }else{
             clearInterval(timerInt);
-            document.querySelector(".bottom").innerHTML = `<div class="gameover"><h1>Game Over</h1><a href="javascript:location.reload()">Play Again</a></div>`;
+            document.querySelector(".bottom").innerHTML = `<div class="gameover"><h1>Game Over</h1><h3>Your Score is ${score}.<h3><a href="javascript:location.reload()">Play Again</a></div>`;
             document.querySelector("#hit").textContent = 0;
         }
     },1000);

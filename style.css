@@ -114,6 +114,11 @@ html,body{
     color: #396d39;
     font-weight: 900;
 }
+.gameover h3{
+    color: #396d39;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
 .gameover a{
     font-size: 20px;
     text-decoration: none;
@@ -124,6 +129,16 @@ html,body{
     cursor: pointer;
 }
 .conclusion{
-    color:#396d39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
     margin-top: 20px;
+    text-decoration: none;
+}
+.conclusion a,i{
+    text-decoration: none;
+    color:#396d39;
+    font-weight: 800;
+    font-size: 20px;
 }
