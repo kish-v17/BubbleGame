@@ -17,6 +17,7 @@ html,body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0 15px;
 }
 .logo h1{
     color: #ffffff;
@@ -44,7 +45,6 @@ html,body{
     background-color: #ffffff;
 }
 .top{
-    padding: 0 30px;
     width: 100%;
     height: 80px;
     background-color: #438543;
@@ -75,20 +75,22 @@ html,body{
     align-items: center;
     justify-content: center;
 }
-.bottom{
-    padding: 10px ;
+.bottom {
+    padding: 10px;
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(100% - 80px);  /* Adjust this height based on your layout */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 10px;
-    background-color: #fff
+    gap: 5px;
+    background-color: #fff;
+    overflow: hidden; /* Ensure bubbles that don’t fit are hidden */
 }
-.bubble{
-    height: 30px;
-    width: 30px;
+
+.bubble {
+    height: 40px;
+    width: 40px;
     background-color: #438543;
     justify-content: center;
     align-items: center;
@@ -97,6 +99,7 @@ html,body{
     font-weight: 600;
     flex-wrap: wrap;
 }
+
 .bubble:hover{
     background-color: #396d39;
     cursor: pointer;
@@ -141,4 +144,36 @@ html,body{
     color:#396d39;
     font-weight: 800;
     font-size: 20px;
+}
+
+@media (max-width:700px) {
+    .panel{
+        width:100%;
+    }
+    .top{
+        font-size: 12px;
+        flex-direction: column;
+
+    }
+    .top .logo{
+        font-size: 10px;
+        
+    }
+    .top .display{
+        justify-content: center;
+        align-items: center;
+    }
+    .elem{
+        gap: 10px;
+    }
+    
+    .bubble {
+        height: 30px;
+        width: 30px;
+    }
+
+    .bottom {
+        gap: 3px;
+    }
+    
 }
