@@ -78,14 +78,14 @@ html,body{
 .bottom {
     padding: 10px;
     width: 100%;
-    height: calc(100% - 80px);  /* Adjust this height based on your layout */
+    height: calc(100% - 80px); 
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 5px;
     background-color: #fff;
-    overflow: hidden; /* Ensure bubbles that don’t fit are hidden */
+    overflow: hidden; 
 }
 
 .bubble {
