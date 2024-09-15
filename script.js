@@ -13,7 +13,7 @@ function makeBubbles(){
     var bubblesPerRow = Math.floor(bottomWidth / (bubbleSize + gapSize));
     var totalRows = Math.floor(bottomHeight / (bubbleSize + gapSize));
 
-    var totalBubbles = bubblesPerRow * totalRows;
+    var totalBubbles = (bubblesPerRow * totalRows) -9;
 
     for (i = 1; i <= totalBubbles; i++) {
         var r = Math.floor(Math.random() * 10);
